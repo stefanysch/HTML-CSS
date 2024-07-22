@@ -1,0 +1,38 @@
+h1 {
+    font-family: 'Poppins', sans-serif;;
+    font-size: 24px;
+    color: #610885;
+}
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(86, 0, 126);
+    font-family: 'Poppins', sans-serif;;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+  
+  caption {
+    caption-side: bottom;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  thead {
+    background-color: rgb(231, 206, 238);
+  }
+  
+  th,
+  td {
+    border: 1px solid rgb(245, 223, 250);
+    padding: 8px 10px;
+    text-align: center;
+  }
+
+  footer {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #610885;
+    text-align: left;
+    margin-top: 20px;
+  }
