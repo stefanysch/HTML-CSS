@@ -5,22 +5,29 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Y - Bem-vindo à sua plataforma de leitura livre!🤠</title>
-  <link rel="icon" type="image/x-icon" href="logo Y.png">
+  <link rel="icon" href="images/y.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Metal&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Charm:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <nav>
     <a id="logo" href="#">
-    <img src="images/logo Y.png" alt="Logo Y" width="60" height="60"></a>
+      <img src="images/logo Y.png" alt="Logo Y" width="60" height="60">
+    </a>
     <ul>
-    <li><form action="/search" method="get">
-    <input type="text" name="query" placeholder="Pesquisar"></form></li>
-    <li><a href="#">Entrar</a></li>
-    <li><a href="#">Publicar</a></li>
+      <li>
+        <form action="/search" method="get">
+          <input type="text" name="query" placeholder="Buscar livro...">
+          <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </li>
+      <li><button class="publicar-btn"><i class="fas">&#xf044;</i></button></li>
+      <li><button class="entrar-btn"><i class="fas">&#xf007;</i></button></li>
     </ul>
   </nav>
 
@@ -28,69 +35,93 @@
     <h1>Bem-vindo à sua plataforma de leitura livre! 🤠</h1>
   </header>
 
-  <div class="section-divider section-livros">
+  <div class=" section-divider section-livros">
     <h2>Livros</h2>
   </div>
 
-    <section class="carrossel">
-      <div class="carrossel-container">
-        <figure class="carrossel-slide">
-          <a href="resumos/o-corvo.html">
-          <img src="images/livro (1).png" alt="Livro: O Corvo">
-          <figcaption>O Corvo</figcaption></a>
-        </figure>
-        <figure class="carrossel-slide">
-          <a href="resumos/extraordinario.html">
-          <img src="images/livro (2).png" alt="Livro: Extraordinário">
-          <figcaption>Extraordinário</figcaption></a>
-        </figure>
-        <figure class="carrossel-slide">
-          <a href="resumos/o-menino-do-pijama-listrado.html">
-          <img src="images/livro (3).png" alt="Livro: O Menino do Pijama Listrado">
-          <figcaption>O Menino do Pijama Listrado</figcaption></a>
-        </figure>
-        <figure class="carrossel-slide">
-          <a href="resumos/o-pequeno-principe.html">
-          <img src="images/livro (4).png" alt="Livro: O Pequeno Príncipe">
-          <figcaption>O Pequeno Príncipe</figcaption></a>
-        </figure>
-      </div>
-      <button class="prev" aria-label="Anterior">&#10094;</button>
-      <button class="next" aria-label="Próximo">&#10095;</button>
-    </section>
-  
-    <div class="section-divider section-poemas">
-      <h2>Poemas</h2>
+  <section class="carrossel">
+    <div class="carrossel-container">
+      <figure class="carrossel-slide">
+        <a href="resumos/o-corvo.html">
+          <img src="images/livro (1).png" class="carrossel-slide img" alt="Livro: O Corvo"></a>
+        <figcaption>O Corvo</figcaption>
+      </figure>
+      <figure class="carrossel-slide">
+        <a href="resumos/extraordinario.html">
+          <img src="images/livro (2).png" alt="Livro: Extraordinário"></a>
+        <figcaption>Extraordinário</figcaption>
+      </figure>
+      <figure class="carrossel-slide">
+        <a href="resumos/o-menino-do-pijama-listrado.html">
+          <img src="images/livro (3).png" alt="Livro: O Menino do Pijama Listrado"></a>
+        <figcaption>O Menino do Pijama Listrado</figcaption>
+      </figure>
+      <figure class="carrossel-slide">
+        <a href="resumos/o-pequeno-principe.html">
+          <img src="images/livro (4).png" alt="Livro: O Pequeno Príncipe"></a>
+        <figcaption>O Pequeno Príncipe</figcaption>
+      </figure>
+      <figure class="carrossel-slide">
+        <a href="resumos/o-meu-pe-de-laranja-lima.html">
+          <img src="images/livro (5).png" alt="Livro: O Meu Pé de Laranja Lima"></a>
+        <figcaption>O Meu Pé de Laranja Lima</figcaption>
+      </figure>
+      <figure class="carrossel-slide">
+        <a href="resumos/o-menino-maluquinho.html">
+          <img src="images/livro (6).png" alt="Livro: O Menino Maluquinho"></a>
+        <figcaption>O Menino Maluquinho</figcaption>
+      </figure>
+      <figure class="carrossel-slide">
+        <a href="resumos/memorias-postumas-de-bras-cubas.html">
+          <img src="images/livro (7).png" alt="Livro: Memórias Póstumas de Brás Cubas"></a>
+        <figcaption>Memórias Póstumas de Brás Cubas</figcaption>
+      </figure>
     </div>
+    <button class="prev" aria-label="Anterior">&#10094;</button>
+    <button class="next" aria-label="Próximo">&#10095;</button>
+  </section>
 
-    <section class="carrossel">
-      <div class="carrossel-container">
-        <figure class="carrossel-slide">
-          <img src="images/livro (1).png" alt="Livro: O Corvo">
-          <figcaption>O Corvo</figcaption>
-        </figure>
-        <figure class="carrossel-slide">
-          <img src="images/livro (2).png" alt="Livro: O Extraordinário">
-          <figcaption>O Extraordinário</figcaption>
-        </figure>
-        <figure class="carrossel-slide">
-          <img src="images/livro (3).png" alt="Livro: O Menino do Pijama Listrado">
-          <figcaption>O Menino do Pijama Listrado</figcaption>
-        </figure>
-        <figure class="carrossel-slide">
-          <img src="images/livro (4).png" alt="Livro: O Pequeno Príncipe">
-          <figcaption>O Pequeno Príncipe</figcaption>
-        </figure>
-      </div>
-      <button class="prev" aria-label="Anterior">&#10094;</button>
-      <button class="next" aria-label="Próximo">&#10095;</button>
-    </section>
-  
-    
+  <div class="section-divider section-poemas">
+    <h2>Poemas</h2>
+  </div>
+
+  <section class="carrossel">
+    <div class="carrossel-container">
+      <figure class="carrossel-slide">
+        <img src="images/poema 1.png" class="carrossel-slide img" alt="Poema: A máscara">
+        <figcaption>A máscara</figcaption>
+      </figure>
+      <figure class="carrossel-slide">
+        <img src="images/poema 2.png" class="carrossel-slide img" alt="Poema: Soneto de Fidelidade">
+        <figcaption>Soneto de Fidelidade</figcaption>
+      </figure>
+      <figure class="carrossel-slide">
+        <img src="images/poema 3.png" class="carrossel-slide img" alt="Poema Mário Quintana">
+        <figcaption>Leilão de Jardim</figcaption>
+      </figure>
+      <figure class="carrossel-slide">
+        <img src="images/poema 4.png" class="carrossel-slide img" alt="Poema: Proposta">
+        <figcaption>Proposta</figcaption>
+      </figure>
+      <figure class="carrossel-slide">
+        <img src="images/poema 5.png" class="carrossel-slide img" alt="Poema: Quadrilha">
+        <figcaption>Quadrilha</figcaption>
+      </figure>
+      <figure class="carrossel-slide">
+        <img src="images/poema 6.png" class="carrossel-slide img" alt="Poema: Tudo Repousa no Silêncio">
+        <figcaption>Tudo Repousa no Silêncio</figcaption>
+      </figure>
+    </div>
+    <button class="prev" aria-label="Anterior">&#10094;</button>
+    <button class="next" aria-label="Próximo">&#10095;</button>
+  </section>
+
+
   <footer>
     <p>©2024 Y. Todos os direitos reservados.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
